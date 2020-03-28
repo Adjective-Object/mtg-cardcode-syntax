@@ -1,0 +1,25 @@
+{
+    "name": "mtg-cardcode-syntax",
+    "displayName": "mtg-cardcode-syntax",
+    "description": "Syntax support for the MTG card code markup langauge",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mtgset",
+            "aliases": ["Magic the Gathering Card Codes", "mtgset"],
+            "extensions": ["mtg-set","mtgset"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mtgset",
+            "scopeName": "source.mtg-cardcode",
+            "path": "./syntaxes/mtgset.tmLanguage.json"
+        }]
+    }
+}
