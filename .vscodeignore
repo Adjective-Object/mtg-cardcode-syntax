@@ -7,3 +7,5 @@ vsc-extension-quickstart.md
 .gitignore
 tslint.json
 tsconfig.json
+*.log
+test
