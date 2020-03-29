@@ -9,3 +9,11 @@ In addition to supporting colours for the base codes here, this extension set in
 -   Card types
 -   Leywords
 -   Colours (W/U/B/R/G, White/Blue/Black/Red/Green)
+
+## Installation
+
+Download the latest version from [the releases page](https://github.com/Adjective-Object/mtg-cardcode-syntax/releases), and install it via
+
+Extensions > The ... menu above extension search > Install from VSIX
+
+![Installation Guide](./install_guide.jpeg)
