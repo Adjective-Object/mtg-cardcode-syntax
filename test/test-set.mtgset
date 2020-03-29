@@ -11,15 +11,27 @@ LG01 - forest
 ## Commons
 ### White Commons
 CW01 - creature, small
-CW02 - creature, small, flying 
-CW03 - creature, small, first strike 
-CW04 - creature, small, flash 
-CW05 - creature, medium, vigilance 
-CW06 - creature, medium, flying 
-CW07 - sorcery token making, flying 
-CW08 - instant 
-CW09 - instant 
-CW10 - enchantment, aura 
+// pick one of these two birds
+CW02 - creature, small, flying - a bird
+CW02 - creature, small, flying - an alternative bird
+CU03 - creature, small, first strike 
+CU04 - creature, small, flash 
+CB05 - creature, medium, vigilance 
+UR06 - creature, medium, flying 
+UG07 - sorcery token making, flying 
+UW08 - instant 
+UW09 - instant 
+UW10 - enchantment, aura 
+
+
+
+// Enemy Pairs
+RZ01 - W/B
+RZ02 - W/R
+RZ03 - U/G
+RZ04 - U/R
+RZ01 - B/G
+
 CW11 -
 CW12 -
 CW13 -
