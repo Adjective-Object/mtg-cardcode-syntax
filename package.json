@@ -1,5 +1,6 @@
 {
     "name": "mtg-cardcode-syntax",
+    "publisher": "Adjective-Object",
     "displayName": "mtg-cardcode-syntax",
     "description": "Syntax support for the MTG card code markup langauge",
     "version": "0.0.1",
@@ -43,11 +44,13 @@
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "lint": "tslint -p ./",
-        "watch": "tsc -watch -p ./"
+        "watch": "tsc -watch -p ./",
+        "package": "vsce package"
     },
     "devDependencies": {
         "@types/node": "^13.9.5",
         "@types/vscode": "^1.43.0",
-        "typescript": "^3.8.3"
+        "typescript": "^3.8.3",
+        "vsce": "^1.74.0"
     }
 }
