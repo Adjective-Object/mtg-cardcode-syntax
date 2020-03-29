@@ -6,20 +6,48 @@
     "engines": {
         "vscode": "^1.43.0"
     },
+    "repository": {
+        "url": "https://github.com/Adjective-Object/mtg-cardcode-syntax"
+    },
+    "activationEvents": [
+        "onLanguage:mtgset"
+    ],
+    "main": "./out/extension.js",
     "categories": [
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "mtgset",
-            "aliases": ["Magic the Gathering Card Codes", "mtgset"],
-            "extensions": ["mtg-set","mtgset"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "mtgset",
-            "scopeName": "source.mtg-cardcode",
-            "path": "./syntaxes/mtgset.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "mtgset",
+                "aliases": [
+                    "Magic the Gathering Card Codes",
+                    "mtgset"
+                ],
+                "extensions": [
+                    "mtg-set",
+                    "mtgset"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "mtgset",
+                "scopeName": "source.mtg-cardcode",
+                "path": "./syntaxes/mtgset.tmLanguage.json"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "tslint -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^13.9.5",
+        "@types/vscode": "^1.43.0",
+        "typescript": "^3.8.3"
     }
 }

@@ -3,27 +3,163 @@
 	"name": "Magic the Gathering Card Codes",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#comment"
 		},
 		{
-			"include": "#strings"
+			"include": "#header"
+		},
+		{
+			"include": "#cardnumber"
+		},
+		{
+			"include": "#description"
+		},
+		{
+			"include": "#multiline-comment"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.mtgset",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.mtgset",
-			"begin": "\"",
-			"end": "\"",
+		"header": {
+			"begin": "(?=^#)",
+			"end": "$",
 			"patterns": [
 				{
-					"name": "constant.character.escape.mtgset",
-					"match": "\\\\."
+					"name": "comment.punctuation.mtgset",
+					"match": "(?=^)#+"
+				},
+				{
+					"name": "storage.type.class.mtgset",
+					"match": "."
+				}
+			]
+		},
+		"comment": {
+			"begin": "(?=//)",
+			"end": "$",
+			"patterns": [
+				{
+					"name": "punctuation.definition.string.header.mtgset",
+					"match": "//"
+				},
+				{
+					"name": "comment.mtgset",
+					"match": "."
+				}
+			]
+		},
+		"cardnumber": {
+			"begin": "^..",
+			"end": "((?= )|$)",
+			"patterns": [
+				{
+					"name": "comment.cardnumber.mtg",
+					"match": "\\d"
+				}
+			]
+		},
+		"rarity": {
+			"patterns": [
+				{
+					"name": "keyword.rarity.common",
+					"match": "\\^[cC]"
+				},
+				{
+					"name": "keyword.rarity.uncommon",
+					"match": "\\^[uU]"
+				},
+				{
+					"name": "keyword.rarity.rare",
+					"match": "\\^[rR]"
+				},
+				{
+					"name": "keyword.rarity.mythic_rare",
+					"match": "\\^[mM]"
+				},
+				{
+					"name": "keyword.rarity.land",
+					"match": "\\^[lL]"
+				},
+				{
+					"name": "keyword.rarity.token",
+					"match": "\\^[tT]"
+				},
+				{
+					"name": "keyword.rarity.special",
+					"match": "\\^[sS]"
+				}
+			]
+		},
+		"frame": {
+			"patterns": [
+				{
+					"name": "keyword.frame.white",
+					"match": "\\^.[wW]"
+				},
+				{
+					"name": "keyword.frame.blue",
+					"match": "\\^.[uU]"
+				},
+				{
+					"name": "keyword.frame.black",
+					"match": "\\^.[bB]"
+				},
+				{
+					"name": "keyword.frame.red",
+					"match": "\\^.[rR]"
+				},
+				{
+					"name": "keyword.frame.green",
+					"match": "\\^.[gG]"
+				},
+				{
+					"name": "keyword.frame.multicolor",
+					"match": "\\^.[zZ]"
+				},
+				{
+					"name": "keyword.frame.split",
+					"match": "\\^.[xX]",
+					"comment": "Non-monocolour split frames, e.g. (Boom // Bust) is R but (Alive // Well) is X"
+				},
+				{
+					"name": "keyword.frame.artifact",
+					"match": "\\^.[aA]",
+					"comment": "Extened to accomodate for all colourless cards. Coloured artifacts go into their corresponding colour."
+				},
+				{
+					"name": "keyword.frame.land",
+					"match": "\\^.[lL]"
+				}
+			]
+		},
+		"multiline-comment": {
+			"name": "punctuation.definition.string.multilinecom.mtgset",
+			"begin": "(?=^(\\t|  +))",
+			"end": "$\\s*$"
+		},
+		"description": {
+			"name": "description.mtgset",
+			"begin": "(?= [-–] )",
+			"end": "$",
+			"patterns": [
+				{
+					"name": "variable.creature.mtgset",
+					"match": "creature"
+				},
+				{
+					"name": "string.quoted.enchantment.mtgset",
+					"match": "enchantment"
+				},
+				{
+					"name": "entity.name.type.instant.mtgset",
+					"match": "instant"
+				},
+				{
+					"name": "storage.type.sorcery.mtgset",
+					"match": "sorcery"
+				},
+				{
+					"name": "punctuation.definition.string.evergreen.mtgset",
+					"match": "(shroud|intimidate|regeneration|small|medium|large|deathtouch|defender|double strike|first strike|flash|flying|haste|hexproof|indestructible|lifelink|menace|protection|reach|trample|vigilance)"
 				}
 			]
 		}

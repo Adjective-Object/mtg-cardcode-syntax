@@ -1,0 +1,276 @@
+# Example MtG Set
+
+## Basic Lands
+
+LW01 - plains
+LU01 - island
+LB01 - swamp
+LR01 - mountain
+LG01 - forest
+
+## Commons
+### White Commons
+CW01 - creature, small
+CW02 - creature, small, flying 
+CW03 - creature, small, first strike 
+CW04 - creature, small, flash 
+CW05 - creature, medium, vigilance 
+CW06 - creature, medium, flying 
+CW07 - sorcery token making, flying 
+CW08 - instant 
+CW09 - instant 
+CW10 - enchantment, aura 
+CW11 -
+CW12 -
+CW13 -
+CW14 -
+CW15 -
+CW16 -
+CW17 -
+CW18 -
+CW19 -
+CW20 -
+### Blue Commons
+CU01 - creature, small, flying 
+CU02 - creature, small, shroud 
+CU03 - creature, medium, flying 
+CU04 - creature, large 
+CU05 - instant 
+CU06 - instant 
+CU07 - instant 
+CU08 - sorcery 
+CU09 - sorcery 
+CU10 - enchantment, aura 
+CU11 -
+CU12 -
+CU13 -
+CU14 -
+CU15 -
+CU16 -
+CU17 -
+CU18 -
+CU19 -
+CU20 -
+### Black Commons
+CB01 - creature, small 
+CB02 - creature, small, flying 
+CB03 - creature, small, deathtouch 
+CB04 - creature, medium, intimidate 
+CB05 - creature, medium 
+CB06 - creature, medium 
+CB07 - instant 
+CB08 - sorcery 
+CB09 - sorcery 
+CB10 - enchantment, aura 
+CB11 -
+CB12 -
+CB13 -
+CB14 -
+CB15 -
+CB16 -
+CB17 -
+CB18 -
+CB19 -
+CB20 -
+### Red Commons
+CR01 - creature, small 
+CR02 - creature, small, first strike 
+CR03 - creature, small 
+CR04 - creature, medium, haste 
+CR05 - creature, medium, trample 
+CR06 - instant 
+CR07 - instant 
+CR08 - instant 
+CR09 - sorcery 
+CR10 - enchantment, aura 
+CR11 -
+CR12 -
+CR13 -
+CR14 -
+CR15 -
+CR16 -
+CR17 -
+CR18 -
+CR19 -
+CR20 -
+### Green Commons
+CG01 - creature, small 
+CG02 - creature, smals 
+CG03 - creature, small, deathtouch 
+CG04 - creature, medium, reach 
+CG05 - creature, medium 
+CG06 - creature, medium 
+CG07 - creature, large, trample 
+CG08 - instant 
+CG09 - sorcery 
+CG10 - enchantment, aura 
+CG11 -
+CG12 -
+CG13 -
+CG14 -
+CG15 -
+CG16 -
+CG17 -
+CG18 -
+CG19 -
+CG20 -
+### Misc Collons
+CA01 - creature, medium 
+CA02 - sac effect 
+CA03 - tap ability 
+CA04 - equipment 
+CA05 - equipment 
+CL01 - produces W 
+CL02 - produces U 
+CL03 - produces B 
+CL04 - produces R 
+CL05 - produces G
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Uncommons
+
+UW01 - creature vigilance deathtouch // something
+UW02
+UW03
+UW04
+UW05
+UW06
+UW07
+UW08
+UW09
+UW10
+UU01
+UU02
+UU03
+UU04
+UU05
+UU06
+UU07
+UU08
+UU09
+UB01
+UB02
+UB03
+UB04
+UB05
+UB06
+UB07
+UB08
+UB09
+UR01
+UR02
+UR03
+UR04
+UR05
+UR06
+UR07
+UR08
+UR09
+UG01
+UG02
+UG03
+UG04
+UG05
+UG06
+UG07
+UG08
+UG09
+UA01
+UA02
+UA03
+UA04
+UA05
+UA06
+UA07
+UA08
+UA09
+
+## Rares
+
+RW01
+RW02
+RW03
+RW04
+RW05
+RW06
+RW07
+RW08
+RW09
+RU01
+RU02
+RU03
+RU04
+RU05
+RU06
+RU07
+RU08
+RU09
+RB01
+RB02
+RB03
+RB04
+RB05
+RB06
+RB07
+RB08
+RB09
+RR01
+RR02
+RR03
+RR04
+RR05
+RR06
+RR07
+RR08
+RR09
+RG01
+RG02
+RG03
+RG04
+RG05
+RG06
+RG07
+RG08
+RG09
+// Enemy Pairs
+RZ01 - W/B
+RZ02 - W/R
+RZ03 - U/G
+RZ04 - U/R
+RZ01 - B/G
+// Enemy Split cards
+RX05 - W/B
+RX06 - W/R
+RX07 - U/G
+RX08 - U/R
+RX09 - B/G
+
+## Mythics
+
+MU01
+MU02
+MU03
+MB01
+MB02
+MB03
+MR01
+MR02
+MR03
+MG01
+MG02
+MG03

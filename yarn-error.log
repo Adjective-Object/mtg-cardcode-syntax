@@ -1,0 +1,60 @@
+Arguments: 
+  /usr/bin/node /home/adjective/.yarn/bin/yarn.js add @types/extension
+
+PATH: 
+  /home/adjective/.yarn/bin:/home/adjective/.config/yarn/global/node_modules/.bin:/home/adjective/.local/bin:/home/adjective/bin:/home/adjective/.yarn/bin:/home/adjective/.nix-profile/bin:/home/adjective/.local/bin:/home/adjective/bin:/home/adjective/.yarn/bin:/usr/local/bin:/usr/bin:/bin:./node_modules/.bin/:/home/adjective/Software/flutter/bin:/home/adjective/Software/flutter/bin/cache/dart-sdk/bin:/home/adjective/Software/android-sdk/platform-tools/:/home/adjective/.cargo/bin/:/home/adjective/.pub-cache/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:./node_modules/.bin/:/home/adjective/Software/flutter/bin:/home/adjective/Software/flutter/bin/cache/dart-sdk/bin:/home/adjective/Software/android-sdk/platform-tools/:/home/adjective/.cargo/bin/:/home/adjective/.pub-cache/bin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  13.9.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2fextension: Not found
+      at Request.params.callback [as _callback] (/home/adjective/.yarn/lib/cli.js:66926:18)
+      at Request.self.callback (/home/adjective/.yarn/lib/cli.js:140564:22)
+      at Request.emit (events.js:321:20)
+      at Request.<anonymous> (/home/adjective/.yarn/lib/cli.js:141536:10)
+      at Request.emit (events.js:321:20)
+      at IncomingMessage.<anonymous> (/home/adjective/.yarn/lib/cli.js:141458:12)
+      at Object.onceWrapper (events.js:427:28)
+      at IncomingMessage.emit (events.js:333:22)
+      at endReadableNT (_stream_readable.js:1201:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+      "name": "mtg-cardcode-syntax",
+      "displayName": "mtg-cardcode-syntax",
+      "description": "Syntax support for the MTG card code markup langauge",
+      "version": "0.0.1",
+      "engines": {
+          "vscode": "^1.43.0"
+      },
+      "categories": [
+          "Programming Languages"
+      ],
+      "contributes": {
+          "languages": [{
+              "id": "mtgset",
+              "aliases": ["Magic the Gathering Card Codes", "mtgset"],
+              "extensions": ["mtg-set","mtgset"],
+              "configuration": "./language-configuration.json"
+          }],
+          "grammars": [{
+              "language": "mtgset",
+              "scopeName": "source.mtg-cardcode",
+              "path": "./syntaxes/mtgset.tmLanguage.json"
+          }]
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
